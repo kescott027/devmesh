@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "devmesh"
+version = "0.1.0"
+description = "Development environment mesh tool for WSL2/Mac/Linux"
+requires-python = ">=3.11"
+dependencies = [
+    "typer[all]",
+    "tomli-w",
+]
+
+[project.scripts]
+devmesh = "devmesh.cli:app"
